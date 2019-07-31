@@ -1,0 +1,79 @@
+* {
+    font-size: 100%;
+}
+html{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+body {
+    /* border: 2px solid red; */
+    /* margin: 4rem; */
+    width: 65% 
+}
+
+input {
+    margin: 1rem 0;
+    width: 70%;
+    padding: .5rem;
+}
+
+a {
+    text-decoration: none;
+    background: blue;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    color: white;
+}
+
+.todo-list>div {
+    padding: .5rem;
+    background: grey;
+    color: white;
+    margin: .5rem;
+    border-radius: 5px;
+}
+
+.delete {
+    float: right;
+    cursor: pointer;
+    color: red;
+}
+
+.delete:hover {
+    color: black;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.new-todo{
+    /* border: 2px solid gray; */
+    margin-top: 3%;
+}
+.todo-description {
+    padding: 3px;
+}
+
+.todo-date {
+    float: right;
+    background-color: #A5BE00;
+    margin-right: 5px;
+    padding: 0.4%;
+}
+.todo-card{
+    border: 2px solid blue;
+    background-color: rgb(96, 101, 173);
+    color: aliceblue;
+    margin-bottom: 5px;
+}
+.no-todo{
+    background-color: rgb(255, 81, 0);
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+}
