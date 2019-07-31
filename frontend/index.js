@@ -27,8 +27,8 @@ async function getAllTodos() {
         return (newTodo.innerHTML = `<p class="no-todo">${response}</p>`);
     } else {
         response.todos.forEach(todo => {
-            newTodo.innerHTML += `<div class="todo-card" id=${todo.id} onClick=deleteTodoById(${todo.id})>
-         <span class='delete'>X</span>
+            newTodo.innerHTML += `<div class="todo-card" id=${todo.id} >
+         <span class='delete' onClick=deleteTodoById(${todo.id})>X</span>
          <p class="todo-date">${todo.created_at}</p>
          <br>
         <p  class="todo-description" > ${todo.name}</p>
