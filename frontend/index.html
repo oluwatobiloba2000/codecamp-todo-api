@@ -11,16 +11,26 @@
 </head>
 
 <body>
-    <label for="name">Enter name</label> <br>
-    <input type="text" placeholder="name" id="text">
-    <a href="#" id="add-button">Add</a>
-
+    <div id="main-todo-input">
+        <label for="name">Enter Todo</label> <br>
+        <input type="text" placeholder="name" id="text">
+        <a href="#" id="add-button">Add</a>
+    </div>
     <!-- <div class="todo-list">
        <div>Hello <span class="delete">X</span></div>
        <div>Teencode <span class="delete">X</span></div>
     </div> -->
 
     <div class="new-todo">
+        <span style="display: none" id="edit">
+            <button id="new-todo">Create a New todo</button>
+            <p id="former-todo">
+
+            </p>
+            <label for="name">Edit Todo</label> <br>
+            <input type="text" placeholder="name" id="edit-todo">
+            <a href="#" id="save-edit">Save</a>
+        </span>
         <!-- `<p class="todo-date">${date}</p>
         <br>
         <p>&nbsp;<i class="fas fa-tools"></i> ${postCategory}</p>
